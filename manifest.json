@@ -1,0 +1,15 @@
+{
+    "name": "Github Editor Font size setter",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "I like Github editor but I feel its font's size too small, so I want it bigger",
+    "icons": {
+        "128": "icons/128.jpg"
+    },
+    "content_scripts": [{
+        "css": ["style.css"],
+        "js": ["main.js"],
+        "matches": ["https://github.com/*"]
+   }],
+   "permissions": ["tabs"]
+}
